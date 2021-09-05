@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD106650-1A05-45F0-86A4-E2199CC95E8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Base_project</RootNamespace>
+    <AssemblyName>Base project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Custom Control liabrary">
+      <HintPath>..\..\..\..\..\..\..\..\5th semester\C#\Custom controls assignemnt\CustomControl\Custom Control liabrary\bin\Debug\Custom Control liabrary.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewQuestionPanelControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubjectParentWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubjectParentWindow.Designer.cs">
+      <DependentUpon>AddSubjectParentWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyticsParentWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalyticsParentWindow.Designer.cs">
+      <DependentUpon>AnalyticsParentWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateQuizParentWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateQuizParentWindow.Designer.cs">
+      <DependentUpon>CreateQuizParentWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager.cs" />
+    <Compile Include="DatasetManager.cs" />
+    <Compile Include="ErrorInforDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorInforDialog.Designer.cs">
+      <DependentUpon>ErrorInforDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetQuizTopicNameWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetQuizTopicNameWindow.Designer.cs">
+      <DependentUpon>GetQuizTopicNameWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalStaticVariablesAndMethods.cs" />
+    <Compile Include="InforMessageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InforMessageDialog.Designer.cs">
+      <DependentUpon>InforMessageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingProgressForm.Designer.cs">
+      <DependentUpon>LoadingProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenQuizParentWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenQuizParentWindow.Designer.cs">
+      <DependentUpon>OpenQuizParentWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PleaseWaitWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PleaseWaitWindow.Designer.cs">
+      <DependentUpon>PleaseWaitWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintInfoDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintInfoDialog.Designer.cs">
+      <DependentUpon>PrintInfoDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintQuizParentWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintQuizParentWindow.Designer.cs">
+      <DependentUpon>PrintQuizParentWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuizQuestionListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuizQuestionListItem.Designer.cs">
+      <DependentUpon>QuizQuestionListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingConnectionStringWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingConnectionStringWindow.Designer.cs">
+      <DependentUpon>SettingConnectionStringWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopicSelectorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopicSelectorDialog.Designer.cs">
+      <DependentUpon>TopicSelectorDialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddSubjectParentWindow.resx">
+      <DependentUpon>AddSubjectParentWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalyticsParentWindow.resx">
+      <DependentUpon>AnalyticsParentWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateQuizParentWindow.resx">
+      <DependentUpon>CreateQuizParentWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorInforDialog.resx">
+      <DependentUpon>ErrorInforDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetQuizTopicNameWindow.resx">
+      <DependentUpon>GetQuizTopicNameWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InforMessageDialog.resx">
+      <DependentUpon>InforMessageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingProgressForm.resx">
+      <DependentUpon>LoadingProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenQuizParentWindow.resx">
+      <DependentUpon>OpenQuizParentWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PleaseWaitWindow.resx">
+      <DependentUpon>PleaseWaitWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintInfoDialog.resx">
+      <DependentUpon>PrintInfoDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintQuizParentWindow.resx">
+      <DependentUpon>PrintQuizParentWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QuizQuestionListItem.resx">
+      <DependentUpon>QuizQuestionListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingConnectionStringWindow.resx">
+      <DependentUpon>SettingConnectionStringWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopicSelectorDialog.resx">
+      <DependentUpon>TopicSelectorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
